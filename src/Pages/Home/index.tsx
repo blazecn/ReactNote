@@ -1,12 +1,15 @@
 import React from "react";
 import { Component } from "react";
-import NavBar from "@/Components/NavBar/NavBar";
+import NavBar from "@/Components/NavBar";
+import Canvas from "@/Components/Canvas";
+import CSS from "./style.module.css";
 
 class Home extends Component {
   render() {
     return (
-      <div>
+      <div className={CSS.home}>
         <NavBar title="React Note"></NavBar>
+        <Canvas />
       </div>
     );
   }

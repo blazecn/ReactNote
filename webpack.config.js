@@ -31,10 +31,19 @@ module.exports = {
           },
         ],
       },
+      {
+        test: /\.(frag|vert|glsl)$/,
+        use: [
+          {
+            loader: "glsl-shader-loader",
+            options: {},
+          },
+        ],
+      },
     ],
   },
   resolve: {
-    extensions: [".js", ".ts", ".jsx", ".tsx"],
+    extensions: [".js", ".ts", ".jsx", ".tsx", ".glsl", ".frag", ".vert"],
     alias: {
       "@": path.resolve(__dirname, "src"),
     },

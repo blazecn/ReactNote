@@ -1,5 +1,5 @@
 import React from "react";
-import CSS from "./NavBar.module.css";
+import CSS from "./style.module.css";
 import { NavLink } from "react-router-dom";
 interface NavBarProps {
   title?: string;

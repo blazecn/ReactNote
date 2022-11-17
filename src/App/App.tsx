@@ -1,6 +1,6 @@
 import React from "react";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import Home from "@/Pages/Home/Home";
+import Home from "@/Pages/Home";
 import About from "@/Pages/About/About";
 
 const router = createBrowserRouter([
@@ -16,11 +16,7 @@ const router = createBrowserRouter([
 
 class App extends React.Component {
   render() {
-    return (
-      <React.StrictMode>
-        <RouterProvider router={router}></RouterProvider>
-      </React.StrictMode>
-    );
+    return <RouterProvider router={router}></RouterProvider>;
   }
 }
 
