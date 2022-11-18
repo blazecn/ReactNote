@@ -9,7 +9,7 @@ class Home extends Component {
     return (
       <div className={CSS.home}>
         <NavBar title="React Note"></NavBar>
-        <Canvas />
+        <Canvas className={CSS.canvas} />
       </div>
     );
   }
